@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar & 3D Image Slider</title>
+    <link rel="stylesheet" href="style copy.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar-container">
+            <!-- Left Section: Logo -->
+            <div class="logo-container">
+                <a href="#">
+                    <img src="images/logo.png" alt="NITTTR Bhopal Logo">
+                </a>
+            </div>
+    
+            <!-- Right Section: Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Fade-in Text -->
+<h1 class="text">Welcome to Our Hotel</h1>
+
+<!-- 3D Image Slider -->
+<div class="slider-container">
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    
+    <div class="slider">
+        <div class="slide active">
+            <img src="images/hotel1.jpg" alt="Modern Interior">
+            <div class="slider-text-overlay">
+                <h2>NATIONAL INSTITUTE OF</h2>
+                <h1>TECHNICAL TEACHERS' TRAINING AND RESEARCH, BHOPAL</h1>
+                <p>National Institute of Technical Teachers' Training and Research, Bhopal is a unique premier institution, established in 1965 by the Ministry of Education, Government of India for teacher training and improving the quality of the entire gamut of the Technical Education System.</p>
+                <a href="#" class="btn">READ MORE</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/sliderhotel1.jpg" alt="Luxury Bedroom">
+            <div class="slider-text-overlay">
+                <h2>EXPERIENCE LUXURY</h2>
+                <h1>ENJOY A COMFORTABLE STAY</h1>
+                <p>Stay in our luxury suites with world-class amenities designed for your comfort and relaxation.</p>
+                <a href="#" class="btn">READ MORE</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/sliderhotel2.jpg" alt="Cozy Living Room">
+            <div class="slider-text-overlay">
+                <h2>COZY & MODERN</h2>
+                <h1>RELAX IN A BEAUTIFUL SPACE</h1>
+                <p>Our rooms are designed with elegance and modernity to ensure you feel at home.</p>
+                <a href="#" class="btn">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+
+
+    <!-- Room Booking Section -->
+<div class="hotel-container">
+    <h1>SARAN</h1>
+    <img src="images/hotel1.jpg" alt="Hotel Lobby" class="hotel-banner">
+
+    <div class="room-cards">
+        <!-- Single Bed -->
+        <div class="room-card" data-room="Single Bed" data-price="1000">
+            <img src="images/single.jpg" alt="Single Bed" class="room-image">
+            <h3>Single Bed</h3>
+            <button class="book-now">Book Now</button>
+            <p class="price">For NITTTR families: <span>₹500</span></p>
+            <p class="price">For Central Govt. Employees: <span>₹800</span></p>
+            <p class="price">For Others: <span class="highlight-price">₹1000</span></p>
+        </div>
+
+        <!-- Double Bed -->
+        <div class="room-card" data-room="Double Bed" data-price="1500">
+            <img src="images/double.jpg" alt="Double Bed" class="room-image">
+            <h3>Double Bed</h3>
+            <button class="book-now">Book Now</button>
+            <p class="price">For NITTTR families: <span>₹800</span></p>
+            <p class="price">For Central Govt. Employees: <span>₹1200</span></p>
+            <p class="price">For Others: <span class="highlight-price">₹1500</span></p>
+        </div>
+
+        <!-- Triple Bed -->
+        <div class="room-card" data-room="Triple Bed" data-price="1800">
+            <img src="images/triple.jpg" alt="Triple Bed" class="room-image">
+            <h3>Triple Bed</h3>
+            <button class="book-now">Book Now</button>
+            <p class="price">For NITTTR families: <span>₹1000</span></p>
+            <p class="price">For Central Govt. Employees: <span>₹1500</span></p>
+            <p class="price">For Others: <span class="highlight-price">₹1800</span></p>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- Room Booking Section 02 -->
+    <div class="hotel-container">
+        <h1>Guest House</h1>
+        <img src="images/hotel1.jpg" alt="Hotel Lobby" class="hotel-banner">
+    
+        <div class="room-cards">
+            <!-- Single Bed -->
+            <div class="room-card" data-room="Single Bed" data-price="1000">
+                <img src="images/single.jpg" alt="Single Bed" class="room-image">
+                <h3>Single Bed</h3>
+                <button class="book-now">Book Now</button>
+                <p class="price">For NITTTR families: <span>₹500</span></p>
+                <p class="price">For Central Govt. Employees: <span>₹800</span></p>
+                <p class="price">For Others: <span class="highlight-price">₹1000</span></p>
+            </div>
+    
+            <!-- Double Bed -->
+            <div class="room-card" data-room="Double Bed" data-price="1500">
+                <img src="images/double.jpg" alt="Double Bed" class="room-image">
+                <h3>Double Bed</h3>
+                <button class="book-now">Book Now</button>
+                <p class="price">For NITTTR families: <span>₹800</span></p>
+                <p class="price">For Central Govt. Employees: <span>₹1200</span></p>
+                <p class="price">For Others: <span class="highlight-price">₹1500</span></p>
+            </div>
+    
+            <!-- Triple Bed -->
+            <div class="room-card" data-room="Triple Bed" data-price="1800">
+                <img src="images/triple.jpg" alt="Triple Bed" class="room-image">
+                <h3>Triple Bed</h3>
+                <button class="book-now">Book Now</button>
+                <p class="price">For NITTTR families: <span>₹1000</span></p>
+                <p class="price">For Central Govt. Employees: <span>₹1500</span></p>
+                <p class="price">For Others: <span class="highlight-price">₹1800</span></p>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Room Booking Section 03 -->
+<!-- Room Booking Section 01 -->
+<div class="hotel-container">
+    <h1>Vishveshwariya</h1>
+    <img src="images/hotel1.jpg" alt="Hotel Lobby" class="hotel-banner">
+
+    <div class="room-cards">
+        <!-- Single Bed -->
+        <div class="room-card" data-room="Single Bed" data-price="1000">
+            <img src="images/single.jpg" alt="Single Bed" class="room-image">
+            <h3>Single Bed</h3>
+            <button class="book-now">Book Now</button>
+            <p class="price">For NITTTR families: <span>₹500</span></p>
+            <p class="price">For Central Govt. Employees: <span>₹800</span></p>
+            <p class="price">For Others: <span class="highlight-price">₹1000</span></p>
+        </div>
+
+        <!-- Double Bed -->
+        <div class="room-card" data-room="Double Bed" data-price="1500">
+            <img src="images/double.jpg" alt="Double Bed" class="room-image">
+            <h3>Double Bed</h3>
+            <button class="book-now">Book Now</button>
+            <p class="price">For NITTTR families: <span>₹800</span></p>
+            <p class="price">For Central Govt. Employees: <span>₹1200</span></p>
+            <p class="price">For Others: <span class="highlight-price">₹1500</span></p>
+        </div>
+
+        <!-- Triple Bed -->
+        <div class="room-card" data-room="Triple Bed" data-price="1800">
+            <img src="images/triple.jpg" alt="Triple Bed" class="room-image">
+            <h3>Triple Bed</h3>
+            <button class="book-now">Book Now</button>
+            <p class="price">For NITTTR families: <span>₹1000</span></p>
+            <p class="price">For Central Govt. Employees: <span>₹1500</span></p>
+            <p class="price">For Others: <span class="highlight-price">₹1800</span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Google Map Section -->
+<!-- <div class="map-container">
+    <h2>Find Us on Google Maps</h2>
+    <div id="google-map"></div>
+</div> -->
+
+<!-- Google Maps API Script -->
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+
+<script>
+    function initMap() {
+        var location = { lat: 28.6139, lng: 77.2090 }; // Change to your desired location
+        var map = new google.maps.Map(document.getElementById("google-map"), {
+            zoom: 15, // Adjust zoom level as needed
+            center: location,
+        });
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Our Hotel Location",
+        });
+    }
+</script> -->
+
+
+<div class="map-container">
+    <h2>Find Us on Google Maps</h2>
+    <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d272.48392616308286!2d77.39153006072388!3d23.23973509036116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c435fd9f00f31%3A0x17f9d634300d499!2sExecutive%20Trainees%20Hostel!5e0!3m2!1sen!2sin!4v1743060998127!5m2!1sen!2sin"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+     
+
+</body>
+</html>
+
+
+<!-- Room Selection Section
+     <div class="container">
+      <div class="scenic-image">
+          <img src="images/hotel1.jpg" alt="Scenic View">
+      </div>
+
+      <div class="rooms">
+          <div class="room" id="room1">
+              <img src="images/single.jpg" alt="Single Bed Room">
+              <h1>single Bed</h1>
+          </div>
+          <div class="room" id="room2">
+              <img src="images/double.jpg" alt="Double Bed Room">
+              <h2>Double Bed</h2>
+          </div>
+          <div class="room" id="room3">
+              <img src="images/triple.jpg" alt="Triple Bed Room">
+              <h2>Triple Bed</h2>
+          </div>
+      </div>
+
+      <div class="buttons">
+          <button class="room-btn" data-room="room1">Book Now</button>
+          <button class="room-btn" data-room="room2">Book Now</button>
+          <button class="room-btn" data-room="room3">Book Now</button>
+      </div>
+  </div> -->
